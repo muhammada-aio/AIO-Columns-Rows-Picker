@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="aio logic.aiodndvalueandcolumnsandrowspicker.AIODnDValueAndColumnsAndRowsPicker" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Rows and Columns Picker</name>
+    <description>Widget to do drag and drop</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+             <property key="valuesSelectedForTable" type="attribute">
+                <caption>Values (path)</caption>
+                <description/>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="columnsSelectedForTable" type="attribute">
+                <caption>Columns (path)</caption>
+                <description/>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="rowsSelectedForTable" type="attribute">
+                <caption>Rows (path)</caption>
+                <description/>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="filtersSelectedForTable" type="attribute">
+                <caption>Filters (path)</caption>
+                <description/>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Data source">
+            <propertyGroup caption="Options">
+                <property key="options" type="datasource" isList="true" >
+                    <caption>Data source</caption>
+                    <description>Please use a microflow to retrieve. Get all the objects you want to suggest as options. The same object type as for the default value must be selected.</description>
+                </property> 
+                <property key="displayAttribute" type="attribute" required="false" dataSource="options">
+                    <caption>Display Attribute</caption>
+                    <description>Display attribute of the object.</description>
+                    <attributeTypes>
+                        <attributeType name="String"/>
+                    </attributeTypes>
+                </property>
+                <property key="valueAttribute" type="attribute" required="false" dataSource="options">
+                    <caption>Value Attribute</caption>
+                    <description>Value attribute of the object.</description>
+                    <attributeTypes>
+                        <attributeType name="String"/>
+                    </attributeTypes>
+                </property>
+            </propertyGroup>          
+        </propertyGroup>
+    </properties>
+</widget>

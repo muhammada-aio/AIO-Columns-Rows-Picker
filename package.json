@@ -1,0 +1,34 @@
+{
+  "name": "aiodndvalueandcolumnsandrowspicker",
+  "widgetName": "AIODnDValueAndColumnsAndRowsPicker",
+  "version": "1.0.0",
+  "description": "Widget to do drag and drop",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Muhammad Asad",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "Y:\\AIOPivotTable",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "aio logic",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.18.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react-beautiful-dnd": "^13.1.1"
+  }
+}
